@@ -14,8 +14,11 @@ const app = express();
 app.use('/slack/events', slackEvents.expressMiddleware());
 
 app.post('/slack/commands', (req, res) => {
-    res.status(200).send('SI SE ÑOR');
-})
+    res.status(200).send({
+        response_type: "in_channel",
+        text: "SI SE ÑOR :face_with_monocle:"
+    });
+});
 
 // Attach listeners to events by Slack Event "type". See: https://api.slack.com/events/message.im
 slackEvents.on('message', (event)=> {
