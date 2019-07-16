@@ -2,6 +2,9 @@
   "name": "elbo_ton",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "10.x"
+  },
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
