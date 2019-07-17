@@ -14,16 +14,16 @@ const app = express();
 app.use('/slack/events', slackEvents.expressMiddleware());
 
 app.post('/slack/commands', (req, res) => {
-    res.status(200).send({
-        response_type: "in_channel",
-        text: "SI SE ÑOR :face_with_monocle:"
-    });
+  res.status(200).send({
+    response_type: "in_channel",
+    text: "SI SE ÑOR :face_with_monocle:"
+  });
 });
 
 app.post('/slack/commands/ping', (req, res) => {
   res.status(200).send({
     response_type: "in_channel",
-    text: "pong :table_tennis_paddle_and_ball"
+    text: "pong :table_tennis_paddle_and_ball:"
   });
 });
 
