@@ -18,11 +18,11 @@ const reducer = (closestMember, member) => {
     
     if ( remainingDays < 0 ) return closestMember; //Ya pasó este cumpleañito' 
 
-    if ( remainingDays > closestMember.remainingDays) return closestMember //cumple después que el closestMember
+    if ( remainingDays > closestMember.remainingDays) return closestMember; //cumple después que el closestMember
 
     return { //nuevo closest
         name: member.nickName, 
-        remainingDays: remainingDays 
+        remainingDays: remainingDays,
     };
 };
 
@@ -31,4 +31,4 @@ const reference = {
     remainingDays: 365,
 };
 
-module.exports = supplyTeam.reduce( (closestMember, member) => reducer(closestMember, member), reference);;
+module.exports = supplyTeam.reduce( (closestMember, member) => reducer(closestMember, member), reference);
