@@ -22,8 +22,17 @@ app.post('/slack/commands', (req, res) => {
 
 app.post('/slack/commands/ping', (req, res) => {
   res.status(200).send({
-      response_type: "in_channel",
-      text: "pong :raqueta_y_pelota_de_tenis_de_mesa:"
+    response_type: "in_channel",
+    text: "pong :table_tennis_paddle_and_ball"
+  });
+});
+
+app.post('/slack/commands/facturas', (req, res) => {
+  const nextToBringFacturs = require('./facturas');
+
+  res.status(200).send({
+    response_type: "in_channel",
+    text: `El proximo a traer es ${nextToBringFacturs.name} ya que cumple en ${nextToBringFacturs.remainingDays} días :croissant: :croissant: :croissant:`
   });
 });
 
