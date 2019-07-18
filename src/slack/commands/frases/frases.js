@@ -3,10 +3,7 @@ const getRandomElementFromArray = array => {
 }
 
 const randomPhrase = (birthdays) => {
-    const membersWithPhrases = birthdays.filter( member => {
-        return member.phrases;
-    });
-
+    const membersWithPhrases = birthdays.filter( member => member.phrases);
     const randomMember = getRandomElementFromArray(membersWithPhrases);
     const randomPhrase = getRandomElementFromArray(randomMember.phrases);
 
