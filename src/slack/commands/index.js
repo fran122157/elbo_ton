@@ -10,11 +10,7 @@ const exec = (command, payload = {}) => {
     const withoutSlash = command.replace('/', '');
     const handler = commands[withoutSlash] || false;
     
-    if (!handler) return {
-        mrkdwn: true,
-        text: '`// TODO ask NicoCuellar`',
-        attachments: [ { text: 'El esta registrado en slack pero no esta implementado' } ]
-    }
+    if (!handler) return { text: '// TODO ask NicoCuellar\nEl comando registrado en slack pero no esta implementado' }
     
     return handler(payload);
 }
