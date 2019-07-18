@@ -20,3 +20,5 @@ export default (app) => {
     slackEvents.on('error', console.error);
 
 }
+
+export const slackEventRequest = (req) => req.path === '/slack/events';

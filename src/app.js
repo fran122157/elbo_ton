@@ -4,13 +4,18 @@ if (!process.env.HEROKU) { require('dotenv').config(); }
 import http from 'http';
 import express from 'express';
 import bodyParser from 'body-parser'
-import addSlackFeatures from './slack';
+import addSlackFeatures, { slackEventRequest } from './slack';
 
 // Initialize an Express application
 const app = express();
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }))
+// Al SDK de slack no le gusta que parsees el payload, tenemos que tirar una magia
+const jsonParser = bodyParser.json();
+const encodedParser = bodyParser.urlencoded({ extended: false });
+app.use((req, res, next) => {
+  if (slackEventRequest(req)) { return next(); }
+  return jsonParser(req, res, () => { encodedParser(req, res, next) });
+});
 
 addSlackFeatures(app);
 
