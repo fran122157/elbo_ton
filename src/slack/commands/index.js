@@ -1,11 +1,13 @@
 import ping from './ping';
 import facturas from './facturas';
 import frases from './frases';
+import sorteo from './sorteo';
 
 const commands = {
     ping,
     facturas,
     frases,
+    sorteo
 }
 
 const isValid = (command) => (command && command.indexOf('/') === 0);
