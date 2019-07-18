@@ -1,4 +1,4 @@
 export default (payload) => ({
     response_type: 'in_channel',
-    text: 'SI SE ÑOR :face_with_monocle:'
+    text: 'pong :table_tennis_paddle_and_ball:'
 });
