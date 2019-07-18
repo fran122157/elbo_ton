@@ -1,5 +1,3 @@
-const supplyTeam = require('./supply-team');
-
 const today = new Date();
 
 const milliSecondsToDays = ms => {
@@ -31,4 +29,4 @@ const reference = {
     remainingDays: 365,
 };
 
-module.exports = supplyTeam.reduce( (closestMember, member) => reducer(closestMember, member), reference);
+export default (birthdays) => birthdays.reduce( (closestMember, member) => reducer(closestMember, member), reference);

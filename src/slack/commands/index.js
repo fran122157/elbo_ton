@@ -1,7 +1,9 @@
-import seviene from './seviene';
+import ping from './ping';
+import facturas from './facturas';
 
 const commands = {
-    seviene
+    ping,
+    facturas
 }
 
 const isValid = (command) => (command && command.indexOf('/') === 0);

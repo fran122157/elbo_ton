@@ -1,4 +1,4 @@
-const supplyTeam = [
+export default [
   {
     fullName: "Francisco",
     middleName: "Martín",
@@ -63,5 +63,3 @@ const supplyTeam = [
     birthDate: "2019-07-16",
   },
 ]
-
-module.exports = supplyTeam;
