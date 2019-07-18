@@ -10,6 +10,7 @@
     "start": "node dist/app.js",
     "start-local": "nodemon --exec babel-node src/app.js ",
     "build": "babel ./src --out-dir ./dist --source-maps --copy-files",
+    "deploy": "git push heroku develop:master",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
