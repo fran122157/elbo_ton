@@ -1,9 +1,11 @@
 import ping from './ping';
 import facturas from './facturas';
+import frases from './frases';
 
 const commands = {
     ping,
-    facturas
+    facturas,
+    frases,
 }
 
 const isValid = (command) => (command && command.indexOf('/') === 0);
