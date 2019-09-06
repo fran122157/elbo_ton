@@ -91,4 +91,11 @@ export default [
       "Estoy pensando en mi mundo interior que tengo en mi cabeza",
     ],
   },
+  {
+    fullName: "Vanesa",
+    middleName: "Gisele",
+    lastName: "Stricker",
+    nickName: "Vane",
+    birthDate: "1990-06-07",
+  },
 ]
