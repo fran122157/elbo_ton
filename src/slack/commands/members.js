@@ -1,3 +1,5 @@
+import { TEAMS, ROLES } from "./teams";
+
 export default [
   {
     fullName: "Francisco",
@@ -5,6 +7,8 @@ export default [
     lastName: "Villarejo",
     nickName: "Fran",
     birthDate: "1993-08-07",
+    team: TEAMS.FEATURES_NN,
+    role: ROLES.FRONTENDER
   },
   {
     fullName: "Damián",
@@ -12,6 +16,8 @@ export default [
     lastName: "Fixel",
     nickName: "Dami",
     birthDate: "1992-09-02",
+    team: TEAMS.FEATURES_NN,
+    role: ROLES.FRONTENDER
   },
   {
     fullName: "Nicolás",
@@ -19,6 +25,8 @@ export default [
     lastName: "Grapsas",
     nickName: "El Poli",
     birthDate: "1994-04-15",
+    team: TEAMS.FEATURES_NN,
+    role: ROLES.FRONTENDER
   },
   {
     fullName: "Lucas",
@@ -26,6 +34,8 @@ export default [
     lastName: "Grula",
     nickName: "Panda",
     birthDate: "1989-02-07",
+    team: TEAMS.FEATURES_NN,
+    role: ROLES.PROJECT_LEADER
   },
   {
     fullName: "Johana",
@@ -33,6 +43,8 @@ export default [
     lastName: "Anez",
     nickName: "Joha",
     birthDate: "1991-01-16",
+    team: TEAMS.FEATURES_NN,
+    role: ROLES.BACKENDER
   },
   {
     fullName: "Alejandro",
@@ -40,6 +52,8 @@ export default [
     lastName: "Kler",
     nickName: "Ale K",
     birthDate: "1998-02-12",
+    team: TEAMS.FEATURES_NN,
+    role: ROLES.BACKENDER
   },
   {
     fullName: "Alejandro",
@@ -47,6 +61,8 @@ export default [
     lastName: "Mácula",
     nickName: "Ale M",
     birthDate: "1993-07-16",
+    team: TEAMS.FEATURES_NN,
+    role: ROLES.BACKENDER
   },
   {
     fullName: "Maximiliano",
@@ -54,6 +70,8 @@ export default [
     lastName: "Roitman",
     nickName: "Maxi",
     birthDate: "1982-05-14",
+    team: TEAMS.FEATURES_NN,
+    role: ROLES.BACKENDER
   },
   {
     fullName: "Leonardo",
@@ -61,6 +79,8 @@ export default [
     lastName: "Anglat",
     nickName: "Leo",
     birthDate: "2019-07-16",
+    team: TEAMS.FEATURES_NN,
+    role: ROLES.BACKENDER
   },
   {
     fullName: "Nicolás",
@@ -68,6 +88,8 @@ export default [
     lastName: "Cuellar",
     nickName: "Nico",
     birthDate: "2019-07-16",
+    team: TEAMS.GRI,
+    role: ROLES.BACKENDER
   },
   {
     fullName: "Vanesa",
@@ -75,5 +97,7 @@ export default [
     lastName: "Stricker",
     nickName: "Vane",
     birthDate: "1990-06-07",
+    team: TEAMS.FEATURES_NN,
+    role: ROLES.PROJECT_LEADER
   },
 ]

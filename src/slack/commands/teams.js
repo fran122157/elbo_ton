@@ -1,0 +1,11 @@
+export const TEAMS = {
+    FEATURES_NN: 'FEATURES_NN',
+    GRI: 'GRI',
+    LOBO: 'LOBO'
+}
+
+export const ROLES = {
+    PROJECT_LEADER: 'PROJECT_LEADER',
+    BACKENDER: 'BACKENDER',
+    FRONTENDER: 'FRONTENDER'
+}

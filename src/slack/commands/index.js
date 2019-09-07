@@ -24,5 +24,5 @@ const exec = (command, payload = {}) => {
 export default (req, res) => {
     const { command='' } = req.body;
     if (!isValid(command)) { return res.status(500).send('Sin comando no hay paraiso'); }
-    res.status(200).send(exec(command));
+    res.status(200).send(exec(command, req.body));
 }
